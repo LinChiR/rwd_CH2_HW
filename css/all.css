@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto ;
+}
+/*****css reset*****/
+
+
+
+/*bar*/
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.bar{
+   
+    background: #f6f6f6;
+    height: 50px;
+}
+
+
+.bar ul{
+    float: right;
+}
+
+.bar li{
+    float: left;
+    margin: 5px;
+}
+
+.bar a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.fb span{
+    color:#667aad;
+    border-right: 2px solid #cccccc;
+    padding-right: 5px;
+}
+
+.fb  span:hover{
+    border-bottom: 2px solid #667aad;
+}
+
+.twitter span{
+    color: #3fb5ed;
+}
+
+.twitter span:hover{
+    border-bottom:2px solid #3fb5ed;
+}
+
+
+
+/*header*/
+.header{
+    position: relative;
+    margin-bottom: 50px;
+}
+@media (max-width: 768px){
+    .header{ 
+        height: auto;
+    }
+}
+
+.logo{ 
+    position:absolute;
+    width: 170px;
+    top:0px;
+    left:0px;
+}
+
+.logo a{
+    display: block;
+    width: 170px;
+    height: 36px;
+    text-indent:-99999px;
+    background: url(../img/logo.png);
+}
+@media (max-width:768px){
+    .logo{
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+.menu{
+   float: right;
+}
+
+.menu li{
+    float: left;
+    margin-left: 5px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #3fb5ed;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 3px;
+}
+.menu li :hover{
+    border-bottom: 2px solid #3fb5ed;
+}
+
+@media(max-width: 768px){
+	.menu{
+        float:none; /* 拿掉浮動 */
+        width: 100%;
+        
+	} 
+	.menu li {
+        width:48%;
+		margin-left: 1%;
+        margin-right: 1%;
+        text-align: center;
+	}
+	.menu li a{
+		width:100%;
+	}
+}
+
+.content{
+    margin: 0 auto;
+}
+.project{
+    float: left;
+    width:300px;
+	margin: 50px 16.5px;
+	padding:20px;
+    line-height: 1.5;
+    text-align: center;
+    border:1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.project h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+@media(max-width:768px){
+    .project{
+        float: none;
+        width: 55%;
+        margin: 0 auto;
+    }
+}
